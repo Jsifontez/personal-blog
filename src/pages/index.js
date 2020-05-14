@@ -1,13 +1,13 @@
-import React from "react"
+import React, { Component } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
 
-class IndexPage extends React.Component {
+class IndexPage extends Component {
   render() {
-    const siteTitle = "Gatsby Starter Personal Website"
+    const siteTitle = "Juan Sifontez"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
