@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__nav__title, .social__title {
+  margin-top: 1rem;
+}
+
+.footer__links {
+  margin-bottom: .8rem;
+}
+
+.footer__link {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.social__link {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer__note {
+  margin-bottom: .3rem;
+}
+
+.footer__note.note--is-last {
+  font-weight: lighter;
+  margin-bottom: 1.1rem
+}
