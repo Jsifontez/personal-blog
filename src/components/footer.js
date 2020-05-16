@@ -36,10 +36,7 @@ const Footer = (props) => {
         </li>
       </ul>
       <p className="footer__note">
-        © 2020 — Code with {` `}
-        <span role="img" aria-label="red heart emoji">
-          ❤
-        </span>
+        <small style={{ fontSize: `85%`}}>© Juan Sifontez 2020</small>
       </p>
       <p className="footer__note note--is-last">
         <small>

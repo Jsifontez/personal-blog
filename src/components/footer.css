@@ -6,23 +6,26 @@
 }
 
 .footer__nav__title, .social__title {
-  margin-top: 1rem;
+  margin-top: .5rem;
+  margin-bottom: .7rem;
 }
 
 .footer__links {
-  margin-bottom: .8rem;
+  margin-bottom: .4rem;
 }
 
 .footer__link {
-  display: inline-block;
-  margin-right: 15px;
-  font-size: 1.1rem;
   font-weight: bold;
+  font-size: 1.1rem;
+  margin-right: 15px;
+  margin-bottom: .5rem;
+  display: inline-block;
 }
 
 .social__link {
-  display: inline-block;
   margin-right: 10px;
+  margin-bottom: .5rem;
+  display: inline-block;
 }
 
 .footer__note {
