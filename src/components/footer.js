@@ -10,7 +10,7 @@ const Footer = (props) => {
       <nav className="footer__nav">
         <ul className="footer__links">
           <li className="footer__link">
-            <Link className="" to="/about/">About</Link>
+            <Link className="" to="/">About</Link>
           </li>
           <li className="footer__link">
             <Link className="" to="/projects/">Projects</Link>

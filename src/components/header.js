@@ -7,12 +7,12 @@ const Header = () => {
   return(
     <header className="header">
       <h1 className="header__logo">
-        <Link to="/">Juan Sifontez</Link>
+        Juan Sifontez
       </h1>
       <nav className="header__nav">
         <ul className="header__links">
           <li className="header__link">
-            <Link className="link" to="/about/">About</Link>
+            <Link className="link" to="/">About</Link>
           </li>
           <li className="header__link">
             <Link className="link" to="/projects/">Projects</Link>
