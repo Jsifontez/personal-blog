@@ -1,0 +1,29 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 15px;
+}
+
+.projects__title {
+  grid-column: 1/13;
+  text-align: center;
+}
+
+.projects__description {
+  font-size: 1.2rem;
+  grid-column: 1/13;
+  text-align: center;
+}
+
+.projects__lists {
+  grid-column: 3/11;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.project {
+  height: 200px;
+  text-align: center;
+  display: inline-block;
+}
