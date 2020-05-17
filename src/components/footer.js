@@ -6,23 +6,6 @@ import "./footer.css"
 const Footer = (props) => {
   return(
     <footer className="footer">
-      <h3 className="footer__nav__title">More in this site:</h3>
-      <nav className="footer__nav">
-        <ul className="footer__links">
-          <li className="footer__link">
-            <Link className="" to="/">About</Link>
-          </li>
-          <li className="footer__link">
-            <Link className="" to="/projects/">Projects</Link>
-          </li>
-          <li className="footer__link">
-            <Link className="" to="/blog/">Blog</Link>
-          </li>
-          <li className="footer__link">
-            <Link className="" to="/contact/">Contact</Link>
-          </li>
-        </ul>
-      </nav>
       <h4 className="social__title">Find me in:</h4>
       <ul className="footer__links">
         <li className="social__link">

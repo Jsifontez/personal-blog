@@ -1,8 +1,10 @@
 .footer {
   display: flex;
+  height: 170px;
+  align-items: center;
+  box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .footer__nav__title, .social__title {
