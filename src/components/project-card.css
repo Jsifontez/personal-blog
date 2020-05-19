@@ -1,0 +1,39 @@
+.project {
+  height: 200px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+}
+
+.project__link {
+  width: 100%;
+  height: 100%;
+  box-shadow: none;
+  display: inline-block;
+}
+
+.project__link:hover > .project__description {
+  background-color: hsla(0, 0%, 0%, .4);
+}
+
+.project__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project__description {
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  color: white;
+  position: absolute;
+  background-color: hsla(0, 0%, 0%, .2);
+}
+
+
+.project__title {
+  margin: 1rem 0 .5rem;
+}

@@ -2,7 +2,8 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import "./projects.css"
+import ProjectCard from "../components/project-card";
+import "./projects.css";
 
 const Projects = (props) => {
   return(
@@ -16,24 +17,20 @@ const Projects = (props) => {
           <a href="https://github.com/jsifontez" target="_blank_">GitHub</a>
         </p>
         <ul className="projects__lists">
-          <li className="project">
-            <a 
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://100daysofvue-show-local-weather.netlify.app/"
-            >
-              Local Weather App
-            </a>
-          </li>
-          <li className="project">
-            <a 
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://100daysofvue-tic-tac-toe.netlify.app/"
-            >
-              Tic Tac Toe Game
-            </a>
-          </li>
+          <ProjectCard
+            href="https://100daysofvue-show-local-weather.netlify.app/"
+            src="../../show-weather.png"
+            alt="Show Local Weather App"
+            title="Show Weather App"
+            description="An app that show the weather"
+          />
+          <ProjectCard
+            href="https://100daysofvue-tic-tac-toe.netlify.app/"
+            src="../../tic-tac-toe.png"
+            alt="Tic Tac Toe Game Page"
+            title="Tic Tac Toe Game"
+            description="A simple game"
+          />
         </ul>
       </div>
     </Layout>
