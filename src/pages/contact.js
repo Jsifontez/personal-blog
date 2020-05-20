@@ -13,20 +13,20 @@ const Contact = (props) => {
           <h1 className="contact__title">Contact</h1>
         </header>
         <section className="contact__description">
-          <p>¡Gracias por querer conectar!</p>
+          <p>Thanks for your interest in getting in touch!</p>
           <p>
-            Estoy contento de poner conectar contigo. Bien sea por
-            alguna duda que tengas o si deseas tener hablar de cualquier
-            otra cosa. <span role="img" aria-label="hug emoji">🤗</span>
+            I am happy to put connect with you. Either for any
+            questionyou have or if you want to have talk about
+            anything else. <span role="img" aria-label="hug emoji">🤗</span>
           </p>
           <p>
-            La mejor forma más rápida de contactarme es por medio de
-            Twitter <a href="https://twitter.com/jsifontez_">@Jsifontez_</a> si
-            quieres charlar conmigo.
+            The quickest way to contact me is through
+            Twitter <a href="https://twitter.com/jsifontez_">@Jsifontez_</a> if
+            you want to chat.
           </p>
           <p>
-            Sin embargo, si tienes una propuesta más seria puedes
-            enviarme un email a <a href="mailto:juansfontz@gmail.com">juansfontz@gmail.com</a>.
+            However, if you have a more serious proposal you
+            can send me an email to <a href="mailto:juansfontz@gmail.com">juansfontz@gmail.com</a>.
           </p>
         </section>
       </article>

@@ -16,3 +16,8 @@
 .contact__description > p {
   margin: 1rem 0;
 }
+
+.contact__description > p > a {
+  box-shadow: none;
+  font-weight: bold;
+}
