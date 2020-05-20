@@ -1,0 +1,18 @@
+.contact {
+  padding: 1rem calc(50% - 350px);
+  min-height: calc(100vh - 170px - 75.6px);
+  box-sizing: border-box;
+}
+
+.contact__title {
+  margin: 0;
+}
+
+.contact__description {
+  margin-top: calc(1rem + 1.5vh);
+  text-align: justify;
+}
+
+.contact__description > p {
+  margin: 1rem 0;
+}
