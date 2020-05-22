@@ -1,0 +1,16 @@
+.blog-posts__wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.5rem;
+  max-width: 90vw;
+}
+
+.blog-posts__header {
+  grid-column: 2/10;
+  grid-row: 1;
+}
+
+.blog-posts {
+  grid-column: 2/10;
+  grid-row: 2;
+}

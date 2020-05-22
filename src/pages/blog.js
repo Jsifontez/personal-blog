@@ -1,11 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-import Button from "../components/button"
+import "./blog.css";
 
 class Blog extends React.Component {
   render() {
@@ -15,38 +14,49 @@ class Blog extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
-        <Bio />
-        <div style={{ margin: "20px 0 40px" }}>
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return (
-              <div key={node.fields.slug}>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
+        <SEO title="Blog" />
+        <section className="blog-posts__wrapper">
+          <header className="blog-posts__header">
+            <h1>Blog Posts</h1>
+            <p>
+              <em>
+                The articles that you going to see here will cover my
+                experience with web development and may include HTML,
+                CSS, Javascript along with some of their libraries or frameworks.
+                Also, you can find here articles about my personal experience.
+              </em>
+            </p>
+          </header>
+          <div className="blog-posts">
+            {posts.map(({ node }) => {
+              const title = node.frontmatter.title || node.fields.slug
+              return (
+                <article key={node.fields.slug}>
+                  <h2>
+                    <Link
+                      style={{ boxShadow: `none` }}
+                      to={`blog${node.fields.slug}`}
+                    >
+                      {title}
+                    </Link>
+                  </h2>
+                  <small>{node.frontmatter.date}</small>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                  />
                   <Link
-                    style={{ boxShadow: `none` }}
-                    to={`blog${node.fields.slug}`}
-                  >
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </div>
-            )
-          })}
-        </div>
-        <Link to="/">
-          <Button marginTop="85px">Go Home</Button>
-        </Link>
+                      style={{ boxShadow: `none` }}
+                      to={`blog${node.fields.slug}`}
+                    >
+                      Read more
+                    </Link>
+                </article>
+              )
+            })}
+          </div>
+        </section>
       </Layout>
     )
   }
