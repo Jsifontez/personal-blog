@@ -1,10 +1,10 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import "./blog.css";
+import BlogCard from "../components/blog-card";
 
 class Blog extends React.Component {
   render() {
@@ -31,28 +31,12 @@ class Blog extends React.Component {
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
-                <article key={node.fields.slug}>
-                  <h2>
-                    <Link
-                      style={{ boxShadow: `none` }}
-                      to={`blog${node.fields.slug}`}
-                    >
-                      {title}
-                    </Link>
-                  </h2>
-                  <small>{node.frontmatter.date}</small>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                  <Link
-                      style={{ boxShadow: `none` }}
-                      to={`blog${node.fields.slug}`}
-                    >
-                      Read more
-                    </Link>
-                </article>
+                <BlogCard
+                  title = { title }
+                  description = { node.frontmatter.description || node.excerpt }
+                  slug = { node.fields.slug }
+                  date = { node.frontmatter.date }
+                />
               )
             })}
           </div>
