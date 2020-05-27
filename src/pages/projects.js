@@ -4,12 +4,13 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ProjectCard from "../components/project-card";
 import "./projects.css";
+import ContentWrapper from "../components/wrapper"
 
 const Projects = (props) => {
   return(
     <Layout>
       <SEO title="Projects" />
-      <div class="projects">
+      <ContentWrapper>
         <h1 className="projects__title">Projects</h1>
         <p className="projects__description">
           Check my featured pesonal projects in this section. <br />
@@ -32,7 +33,7 @@ const Projects = (props) => {
             description="A simple game"
           />
         </ul>
-      </div>
+      </ContentWrapper>
     </Layout>
   )
 }

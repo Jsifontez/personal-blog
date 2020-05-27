@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./blog.css";
+import ContentWrapper from "../components/wrapper";
 import BlogCard from "../components/blog-card";
 
 class Blog extends React.Component {
@@ -15,7 +16,7 @@ class Blog extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Blog" />
-        <section className="blog-posts__wrapper">
+        <ContentWrapper>
           <header className="blog-posts__header">
             <h1>Blog Posts</h1>
             <p>
@@ -40,7 +41,7 @@ class Blog extends React.Component {
               )
             })}
           </div>
-        </section>
+        </ContentWrapper>
       </Layout>
     )
   }

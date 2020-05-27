@@ -1,9 +1,3 @@
-.projects {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 15px;
-}
-
 .projects__title {
   grid-column: 1/13;
   text-align: center;

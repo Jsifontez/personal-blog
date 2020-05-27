@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import "./blog-post.css";
+import ContentWrapper from "../components/wrapper"
 
 const BlogPostTemplate = (props) => {
   const post = props.data.mdx
@@ -18,7 +19,7 @@ const BlogPostTemplate = (props) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article className="post">
+      <ContentWrapper element="article">
         <header className="post__header">
           <h1>{post.frontmatter.title}</h1>
           <p
@@ -68,7 +69,7 @@ const BlogPostTemplate = (props) => {
             </li>
           </ul>
         </footer>
-      </article>
+      </ContentWrapper>
     </Layout>
   )
 }
