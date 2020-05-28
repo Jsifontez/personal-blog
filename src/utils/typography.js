@@ -1,17 +1,27 @@
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
 
-Wordpress2016.overrideThemeStyles = () => {
-  return {
-    "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
+const typography = new Typography({
+  baseFontSize: "18px",
+  baseLineHeight: 1.66,
+  scaleRatio: 2.5,
+  googleFonts: [
+    {
+      name: "Fira Sans",
+      styles: ["Bold"]
     },
-  }
-}
-
-delete Wordpress2016.googleFonts
-
-const typography = new Typography(Wordpress2016)
+    {
+      name: "Montserrat",
+      styles: [
+        '400',
+        '400i',
+        '700',
+        '700i',
+      ],
+    }
+  ],
+  headerFontFamily: ["Fira Sans", "sans-serif"],
+  bodyFontFamily: ["Montserrat", "sans-serif"],
+})
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

@@ -10,6 +10,8 @@
 .footer__nav__title, .social__title {
   margin-top: .5rem;
   margin-bottom: .7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .footer__links {

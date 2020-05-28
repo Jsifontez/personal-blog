@@ -58,7 +58,7 @@ class Layout extends React.Component {
     return (
       <Wrapper>
         <Header />
-        <main>{children}</main>
+        <main style={{paddingTop: '4rem'}}>{children}</main>
         <Footer />
       </Wrapper>
     )
