@@ -33,13 +33,13 @@ class IndexPage extends Component {
               learning Python and GraphQL for the BackEnd.
             </p>
             <p>
-              I'm also interested in <Link to="/blog/">Blogging</Link> from my
+              I'm also interested in <Link className="link" to="/blog/">Blogging</Link> from my
               personal experiences in life and tech. I'm passinate about
               become a writer in the future. That's why I'm starting with Blog
             </p>
             <p>
               Currently I'm developing personal projects and I'm available to hire. Feel
-              free to <Link to="/contact">contact</Link> with me.
+              free to <Link className="link" to="/contact">contact</Link> with me.
             </p>
           </div>
         </HomeLayout>

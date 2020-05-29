@@ -1,3 +1,33 @@
 .home {
   padding: 1rem calc(50% - 350px);
 }
+
+.link {
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  position: relative;
+}
+
+.link:visited {
+  /*color: hsl(355, 78%, 70%);*/
+  color: hsl(340, 82%, 59%);
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  height: 20%;
+  width: 100%;
+  background-color: hsla(355, 78%, 56%, .25);
+  transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+}
+
+.link:hover::after {
+  left: 0;
+  height: 100%;
+}

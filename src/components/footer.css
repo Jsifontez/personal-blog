@@ -15,15 +15,8 @@
 }
 
 .footer__links {
+  margin-left: 0;
   margin-bottom: .4rem;
-}
-
-.footer__link {
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-right: 15px;
-  margin-bottom: .5rem;
-  display: inline-block;
 }
 
 .social__link {
@@ -32,11 +25,24 @@
   display: inline-block;
 }
 
+.social__link > .link {
+  font-size: .9rem;
+}
+
 .footer__note {
   margin-bottom: .3rem;
 }
 
 .footer__note.note--is-last {
-  font-weight: lighter;
-  margin-bottom: 1.1rem
+  font-weight: 300;
+  margin-bottom: 1.1rem;
+}
+
+.link.is--note {
+  font-weight: 300;
+  font-size: .8rem;
+}
+
+.link.is--note::after {
+  height: 10%;
 }

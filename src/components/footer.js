@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import "./footer.css"
 
@@ -9,13 +8,34 @@ const Footer = (props) => {
       <h4 className="social__title">Find me in:</h4>
       <ul className="footer__links">
         <li className="social__link">
-          <a href="https://twitter.com/jsifontez_">Twitter</a>
+          <a
+            className="link"
+            href="https://twitter.com/jsifontez_"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </a>
         </li>
         <li className="social__link">
-          <a href="https://www.linkedin.com/in/juan-sifontez/">LinkedIn</a>
+          <a
+            className="link"
+            href="https://www.linkedin.com/in/juan-sifontez/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
         </li>
         <li className="social__link">
-          <a href="https://www.facebook.com/juansifontez">Facebook</a>
+          <a
+            className="link"
+            href="https://www.facebook.com/juansifontez"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
         </li>
       </ul>
       <p className="footer__note">
@@ -24,8 +44,8 @@ const Footer = (props) => {
       <p className="footer__note note--is-last">
         <small>
           This site is built with {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a> {` `}
-          and hosted on <a href="https://netlify.com">Netlify</a>.
+          <a className="link is--note" href="https://www.gatsbyjs.org">Gatsby</a> {` `}
+          and hosted on <a className="link is--note" href="https://netlify.com">Netlify</a>.
         </small>
       </p>
     </footer>
