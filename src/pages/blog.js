@@ -17,10 +17,10 @@ class Blog extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Blog" />
         <ContentWrapper>
-          <header className="blog-posts__header">
+          <header className="blog__header">
             <h1>Blog Posts</h1>
             <p>
-              <em>
+              <em className="blog__intro">
                 The articles that you going to see here will cover my
                 experience with web development and may include HTML,
                 CSS, Javascript along with some of their libraries or frameworks.
@@ -28,7 +28,7 @@ class Blog extends React.Component {
               </em>
             </p>
           </header>
-          <div className="blog-posts">
+          <div className="blog__posts">
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (

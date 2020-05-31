@@ -11,20 +11,21 @@ const BlogCard = (props) => {
     >
       <h2 className="blog-card__title">
         <Link
-          className = "blog-card__link"
+          className = "link link__title"
           to={`blog${props.slug}`}
         >
           {props.title}
         </Link>
       </h2>
-      <small>{props.date}</small>
+      <small className="blog-card__date">{props.date}</small>
       <p
+        className="blog-card__summary"
         dangerouslySetInnerHTML={{
           __html: props.description
         }}
       />
       <Link
-        className = "blog-card__link blog-card__link--read"
+        className = "link link--read"
         to={`blog${props.slug}`}
       >
         Read more
