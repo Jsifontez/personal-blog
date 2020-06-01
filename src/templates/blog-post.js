@@ -21,16 +21,8 @@ const BlogPostTemplate = (props) => {
       />
       <ContentWrapper element="article">
         <header className="post__header">
-          <h1>{post.frontmatter.title}</h1>
-          <p
-            style={{
-              ...scale(-1 / 5),
-              display: `block`,
-              marginBottom: rhythm(1),
-              marginTop: rhythm(-1),
-            }}
-            className="post__date"
-          >
+          <h1 className="post__title">{post.frontmatter.title}</h1>
+          <p className="post__date">
             {post.frontmatter.date}
           </p>
         </header>
@@ -44,25 +36,17 @@ const BlogPostTemplate = (props) => {
             }}
           />
 
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
+          <ul className="post__pagination">
             <li>
               {previous && (
-                <Link to={`blog${previous.fields.slug}`} rel="prev">
+                <Link className="link pagination__link" to={`blog${previous.fields.slug}`} rel="prev">
                   ← {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && (
-                <Link to={`blog${next.fields.slug}`} rel="next">
+                <Link className="link pagination__link" to={`blog${next.fields.slug}`} rel="next">
                   {next.frontmatter.title} →
                 </Link>
               )}
