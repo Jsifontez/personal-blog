@@ -1,5 +1,5 @@
 import React from "react";
-import "./wrapper.css"
+import "./wrapper.css";
 
 const ContentWrapper = ({children, element = 'section'}) => {
   let wrapper_element
