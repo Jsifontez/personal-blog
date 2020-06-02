@@ -31,6 +31,28 @@
   display: inline-block;
 }
 
+.link.link--header {
+  font-weight: 400;
+}
+
+.link.link--header:visited {
+  color: hsl(0, 0%, 0%);
+}
+
+.link.link--header:hover {
+  font-weight: bold;
+  color: hsl(340, 82%, 59%);
+}
+
+.link.link--header::after {
+  content: none;
+}
+
+.link.link--header.active {
+  font-weight: 700;
+  color: hsl(340, 82%, 59%);
+}
+
 
 @media (max-width: 650px) {
   .header {

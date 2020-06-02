@@ -12,16 +12,40 @@ const Header = () => {
       <nav className="header__nav">
         <ul className="header__links">
           <li className="header__link">
-            <Link className="link" to="/">About</Link>
+            <Link
+              activeClassName="active"
+              className="link link--header"
+              to="/"
+            >
+              About
+            </Link>
           </li>
           <li className="header__link">
-            <Link className="link" to="/projects/">Projects</Link>
+            <Link
+              activeClassName="active"
+              className="link link--header"
+              to="/projects/"
+            >
+              Projects
+            </Link>
           </li>
           <li className="header__link">
-            <Link className="link" to="/blog/">Blog</Link>
+            <Link
+              activeClassName="active"
+              className="link link--header"
+              to="/blog/"
+            >
+              Blog
+            </Link>
           </li>
           <li className="header__link">
-            <Link className="link is--last" to="/contact/">Contact</Link>
+            <Link
+              activeClassName="active"
+              className="link link--header is--last"
+              to="/contact/"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

@@ -39,7 +39,7 @@ class IndexPage extends Component {
             </p>
             <p>
               Currently I'm developing personal projects and I'm available to hire. Feel
-              free to <Link className="link" to="/contact">contact</Link> with me.
+              free to <Link className="link" to="/contact/">contact</Link> with me.
             </p>
           </div>
         </HomeLayout>
