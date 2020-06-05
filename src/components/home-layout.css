@@ -1,5 +1,6 @@
 .home {
   padding: 1rem calc(50% - 350px);
+  min-height: calc(100vh - 170px - 75.6px - 4rem);
 }
 
 .link {

@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  height: 170px;
+  height: 8.667rem;/*156px;*/
   align-items: center;
   box-sizing: border-box;
   flex-direction: column;
