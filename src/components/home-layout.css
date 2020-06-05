@@ -1,6 +1,14 @@
 .home {
   padding: 1rem calc(50% - 350px);
-  min-height: calc(100vh - 170px - 75.6px - 4rem);
+  min-height: calc(100vh - 156px - 75px - 4rem);
+}
+
+@media (max-width: 768px) {
+  .home {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
 }
 
 .link {
