@@ -21,12 +21,12 @@ const Contact = (props) => {
           </p>
           <p>
             The quickest way to contact me is through
-            Twitter <a href="https://twitter.com/jsifontez_">@Jsifontez_</a> if
+            Twitter <a className="link" href="https://twitter.com/jsifontez_">@Jsifontez_</a> if
             you want to chat.
           </p>
           <p>
             However, if you have a more serious proposal you
-            can send me an email to <a href="mailto:juansfontz@gmail.com">juansfontz@gmail.com</a>.
+            can send me an email to <a className="link" href="mailto:juansfontz@gmail.com">juansfontz@gmail.com</a>.
           </p>
         </section>
       </article>
