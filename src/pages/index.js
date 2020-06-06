@@ -19,23 +19,24 @@ class IndexPage extends Component {
           <div style={{ textAlign: `center`, padding: `12px` }}>
             <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
             <h1>
-              Hi people, Welcome{" "}
-              <span role="img" aria-label="wave emoji">
-                👋
-              </span>
+              Welcome
             </h1>
           </div>
           <div style={{ textAlign: `center`, padding: `12px` }}>
-            <p>My name is Juan, I'm a self-taught Junior FrontEnd developer.</p>
+            <p>Hi {" "}
+              <span role="img" aria-label="wave emoji">
+                👋
+              </span> my name is Juan, I'm a
+              self-taught Junior FrontEnd developer.</p>
             <p>
-              My knowledge go from HTML, CSS and Javascript.
-              Mainly I use ReactJS and Vue.js Ecosystems but I'm
-              learning Python and GraphQL for the BackEnd.
+              My knowledge go from HTML, CSS and Javascript focusing
+              on responsive design. Mainly I use ReactJS and Vue.js
+              ecosystems. However, I'm learning Python and GraphQL
+              for the BackEnd.
             </p>
             <p>
               I'm also interested in <Link className="link" to="/blog/">Blogging</Link> from my
-              personal experiences in life and tech. I'm passinate about
-              become a writer in the future. That's why I'm starting with Blog
+              personal experiences in life and tech things. And write stories just for fun.
             </p>
             <p>
               Currently I'm developing personal projects and I'm available to hire. Feel
