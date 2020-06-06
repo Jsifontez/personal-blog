@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.projects__lists {
+.project__lists {
   grid-column: 3/11;
   display: grid;
   grid-gap: 10px;
@@ -20,4 +20,16 @@
 
 .link.is--bigger {
   font-size: 1.2rem;
+}
+
+@media (max-width: 865px) {
+  .project__lists {
+    grid-column: 1/13;
+  }
+  .projects__intro {
+    text-align: justify;
+  }
+  .projects__intro > br {
+    display: none;
+  }
 }

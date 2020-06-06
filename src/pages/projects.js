@@ -22,7 +22,7 @@ const Projects = (props) => {
             rel="noopener noreferrer"
           >GitHub</a>
         </p>
-        <ul className="projects__lists">
+        <ul className="project__lists">
           <ProjectCard
             href="https://100daysofvue-show-local-weather.netlify.app/"
             src="../../show-weather.png"
