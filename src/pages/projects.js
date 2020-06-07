@@ -37,6 +37,27 @@ const Projects = (props) => {
             title="Tic Tac Toe Game"
             description="A simple game"
           />
+          <ProjectCard
+            href="https://jsifontez.github.io/fcc-landing-page/"
+            src="../../advanced-react-graphql-course.png"
+            alt="Advanced React GraphQL Course Page"
+            title="Advanced React-GraphQL Course"
+            description="A landing page for Wes Bos"
+          />
+          <ProjectCard
+            href="https://jsifontez.github.io/form-page/"
+            src="../../survey-form.png"
+            alt="Survey Form Page"
+            title="Survey Form"
+            description="A Responsive Survey Form"
+          />
+          <ProjectCard
+            href="https://jsifontez.github.io/tribute-page/"
+            src="../../george-rr-martin-tribute-page.png"
+            alt="George R.R. Marting Tribute Page"
+            title="Tribute Page"
+            description="A tribute page for George R. R. Martin"
+          />
         </ul>
       </ContentWrapper>
     </Layout>
