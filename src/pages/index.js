@@ -17,7 +17,7 @@ class IndexPage extends Component {
         />
         <HomeLayout>
           <div style={{ textAlign: `center`, padding: `12px` }}>
-            <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
+            {/*<img style={{ margin: 0 }} src="./yo-en-la-playa-editada-blurbg.png" alt="Yo en la playa" /> */}
             <h1>
               Welcome
             </h1>
@@ -27,7 +27,7 @@ class IndexPage extends Component {
               <span role="img" aria-label="wave emoji">
                 👋
               </span> my name is Juan, I'm a
-              self-taught Junior FrontEnd developer.</p>
+              self-taught FrontEnd developer.</p>
             <p>
               My knowledge go from HTML, CSS and Javascript focusing
               on responsive design. Mainly I use ReactJS and Vue.js
