@@ -30,11 +30,11 @@ const Footer = (props) => {
         <li className="social__link">
           <a
             className="link"
-            href="https://www.facebook.com/juansifontez"
+            href="https://github.com/Jsifontez"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Facebook
+            GitHub
           </a>
         </li>
       </ul>
