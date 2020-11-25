@@ -16,7 +16,7 @@ Bueno, debo decir que hoy fue que comencé el tutorial. Pensaba que iba a avanza
 
 Luego de decidir seguir los pasos del tutorial, pude instalar todas las dependencias, re-factoricé el orden de los componentes y estilos, descargue el código del servidor, realicé un deploy de la base de datos (PrimsaDB) y agregué dos elementos a la base de datos.
 
-<div style="width:100%;height:0;padding-bottom:51%;position:relative;"><iframe src="https://giphy.com/embed/tdpzi0Sk4yimQ" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><small><a href="https://giphy.com/gifs/barney-tdpzi0Sk4yimQ">via GIPHY</a></small></p>
+<div style="width:80%;height:0;padding-bottom:51%;position:relative;"><iframe src="https://giphy.com/embed/tdpzi0Sk4yimQ" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><small><a href="https://giphy.com/gifs/barney-tdpzi0Sk4yimQ">via GIPHY</a></small></p>
 
 ### Aquí te explico cómo lo hice
 
@@ -60,7 +60,7 @@ yarn install
 yarn prisma deploy
 ```
 
-<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/3o6gbbtkO23zlk5Zm0" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><small><a href="https://giphy.com/gifs/barney-tdpzi0Sk4yimQ">via GIPHY</a></small></p>
+<div style="width:60%;height:0;padding-bottom:50%;position:relative;"><iframe src="https://giphy.com/embed/3o6gbbtkO23zlk5Zm0" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><small><a href="https://giphy.com/gifs/barney-tdpzi0Sk4yimQ">via GIPHY</a></small></p>
 
 ## Nos Leemos
 
