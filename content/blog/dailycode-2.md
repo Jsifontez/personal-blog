@@ -117,9 +117,9 @@ Eso fueron todos los cambios que realicé hoy. Si sabes la respuesta al problema
 
 ![Bob Esponja despidiéndose](/assets/cya.gif)
 
----------------
+- - -
 
 ### Artículos de referencia
 
-- CSS-TRICKS: [Considerations for styling the `pre` tag](https://css-tricks.com/considerations-styling-pre-tag/)
-- MDN: [<code>: The Inline Code element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code)
+* CSS-TRICKS: [Considerations for styling the `pre` tag](https://css-tricks.com/considerations-styling-pre-tag/)
+* MDN: [`<code>`: The Inline Code element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code)
