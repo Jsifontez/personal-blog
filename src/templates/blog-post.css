@@ -64,8 +64,7 @@
   min-width: 40%;
 }
 
-.post__body > p > a,
-.post__body > ul > li > ul > li > a {
+.post__body a {
   font-size: 1rem;
   font-weight: bold;
   position: relative;
@@ -74,13 +73,11 @@
   text-decoration: none;
 }
 
-.post__body > p > a:visited,
-.post__body > ul > li > ul > li > a:visited {
+.post__body a:visited {
   color: hsl(340, 82%, 59%);
 }
 
-.post__body > p > a::after,
-.post__body > ul > li > ul > li > a::after {
+.post__body a::after {
   content: '';
   position: absolute;
   left: 10%;
@@ -91,10 +88,13 @@
   transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
 }
 
-.post__body > p > a:hover::after,
-.post__body > ul > li > ul > li > a:hover::after {
+.post__body a:hover::after {
   left: 0;
   height: 100%;
+}
+
+.post__body small a {
+  font-size: .83em;
 }
 
 .post__body > pre {
@@ -106,11 +106,12 @@
   background: none;
 }
 
-code {
+.post__body code {
   background-color: hsl(340, 70%, 90%);
   border-radius: .2rem;
   padding: .1rem .3rem .2rem;
   font-family: 'Ubuntu Mono', monospace;
+  font-size: 1em;
 }
 
 .post__body > blockquote {
