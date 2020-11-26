@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
 .post__header {
   grid-row: 1;
   grid-column: 2/10;
@@ -81,12 +83,21 @@
   height: 100%;
 }
 
+
 .post__body > pre {
   max-width: 80vw;
 }
 
 .post__body > pre > code {
   font-size: .95rem;
+  background: none;
+}
+
+code {
+  background-color: hsl(340, 70%, 90%);
+  border-radius: .2rem;
+  padding: .1rem .3rem .2rem;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 .post__body > blockquote {
