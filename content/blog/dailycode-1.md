@@ -1,12 +1,12 @@
 ---
-path: 'DailyCode#1'
+path: 'DailyCode#0'
 date: 2020-11-25T02:13:51.874Z
-title: 'DailyCode #1'
+title: 'DailyCode #0'
 description: Comienzo realizando un tutorial de ReactJs + Apollo Client
 ---
 ![Lentes en una computadora con código detras](/assets/welcome-blog.jpeg)
 
-Hola. 👋🏼 A partir de hoy SI comienzo a publicar los \*DailyCode\* (si ya se que debí comenzar hace 2 semanas, pero se me complicaron unas cosas 😅). Pero comenzamos con el aprendizaje 🚀
+Hola. 👋🏼 A partir de hoy SI comienzo a publicar los **DailyCode** (si ya se que debí comenzar hace 2 semanas, pero se me complicaron unas cosas 😅). Pero comenzamos con el aprendizaje 🚀
 
 Tengo pensado crear una app para seguimientos de hábitos. Será totalmente en JAMstack y utilizaré [Next.js](nextjs.org/) como framework, [Netlify](https://www.netlify.com) para el deploy y [FaunaDB](fauna.com) con [Netlify functions ](https://www.netlify.com/products/functions/)para manejar la base de datos. Sin embargo, FaunaDB se maneja con GraphQL y tengo poco conocimiento de lenguaje.
 
