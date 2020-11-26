@@ -19,7 +19,6 @@
 .post__body {
   grid-row: 2;
   grid-column: 2/10;
-  margin-bottom: -12em;
 }
 
 .post__body > h2,
@@ -55,8 +54,14 @@
   line-height: calc(1.1rem * 1.5);
 }
 
-.post__body > a:any-link {
-  color: red;
+.post__body > p:first-child > img {
+  max-width: 100%;
+  min-width: 80%;
+}
+
+.post__body > p img {
+  max-width: 100%;
+  min-width: 40%;
 }
 
 .post__body > p > a,
@@ -127,10 +132,6 @@ code {
 }
 .post__body > blockquote > p {
   display: inline;
-}
-
-.post__body > p > image {
-
 }
 
 .post__footer {
