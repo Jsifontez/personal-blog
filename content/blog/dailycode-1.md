@@ -1,7 +1,7 @@
 ---
-path: 'DailyCode#0'
+path: 'DailyCode#1'
 date: 2020-11-25T02:13:51.874Z
-title: 'DailyCode #0'
+title: 'DailyCode #1'
 description: Comienzo realizando un tutorial de ReactJs + Apollo Client
 ---
 ![Lentes en una computadora con código detras](/assets/welcome-blog.jpeg)
