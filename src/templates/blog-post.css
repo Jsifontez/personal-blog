@@ -151,3 +151,9 @@ code {
 .link.pagination__link {
   font-size: 1.1rem;
 }
+
+@media (max-width: 768px) {
+  .post__body > pre {
+    max-width: 100vw;
+  }
+}
