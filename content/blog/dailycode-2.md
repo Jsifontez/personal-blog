@@ -111,8 +111,15 @@ Debido a que ya yo había agregado estilos a los links normales, sólo tenía qu
 
 Sin embargo, este selector no soluciona todo mi problema, porque sólo agrega los estilos a los links que estan dentro de un `li` que tiene una lista anidada. No sé si el selector `.post__body a` me funcione, pero definitivamente lo probaré en otro momento.
 
-### Nos leemos
+## Nos leemos
 
 Eso fueron todos los cambios que realicé hoy. Si sabes la respuesta al problema que tengo con los links, envíame un tweet (o un DM, si prefieres) y me ayudarás un montón. Si no igual, escríbeme y cuéntame sobre qué problema de programación tienes y, si puedo ayudarte lo haré con todo gusto. Nos leemos. 👋🏼
 
 ![Bob Esponja despidiéndose](/assets/cya.gif)
+
+---------------
+
+### Artículos de referencia
+
+- CSS-TRICKS: [Considerations for styling the `pre` tag](https://css-tricks.com/considerations-styling-pre-tag/)
+- MDN: [<code>: The Inline Code element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code)
