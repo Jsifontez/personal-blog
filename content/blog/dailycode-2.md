@@ -34,7 +34,7 @@ Al igual que `<pre>`, `<code>` es utilizados para textos preformateados. Sin emb
 
 Mi problema era que los todos los estilos del post están en una plantilla y tengo que escribir los estilos de la forma `.post__body > cualquier hijo estilo que quiera escribir` que es la regla de CSS donde se le da estilos a los elementos que sean hijos directos de `.post__body`.
 
-Peeero... el <code> al cual quería dar estilos estaba dentro de una lista, que también tenía listas anidadas. Era algo así:
+Peeero... el `<code>` al cual quería dar estilos estaba dentro de una lista, que también tenía listas anidadas. Era algo así:
 
 ```CSS
 <ul>
