@@ -54,8 +54,13 @@
   line-height: calc(1.1rem * 1.5);
 }
 
-.post__body > p > a {
-  font-size: 1.1rem;
+.post__body > a:any-link {
+  color: red;
+}
+
+.post__body > p > a,
+.post__body > ul > li > ul > li > a {
+  font-size: 1rem;
   font-weight: bold;
   position: relative;
   display: inline-block;
@@ -63,11 +68,13 @@
   text-decoration: none;
 }
 
-.post__body > p > a:visited {
+.post__body > p > a:visited,
+.post__body > ul > li > ul > li > a:visited {
   color: hsl(340, 82%, 59%);
 }
 
-.post__body > p > a::after {
+.post__body > p > a::after,
+.post__body > ul > li > ul > li > a::after {
   content: '';
   position: absolute;
   left: 10%;
@@ -78,11 +85,11 @@
   transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
 }
 
-.post__body > p > a:hover::after {
+.post__body > p > a:hover::after,
+.post__body > ul > li > ul > li > a:hover::after {
   left: 0;
   height: 100%;
 }
-
 
 .post__body > pre {
   max-width: 80vw;
