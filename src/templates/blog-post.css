@@ -101,7 +101,8 @@
   max-width: 59vw;
 }
 
-.post__body > pre > code {
+.post__body > pre > code,
+.post__body pre > code {
   font-size: .95rem;
   background: none;
 }
