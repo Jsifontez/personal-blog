@@ -168,3 +168,8 @@ Ya queda poco para terminar la aplicación. Falta afinar algunos detalles, agreg
 Todo eso lo haré en los días subsiguientes. Por ahora. Nos leemos. 👋🏼 
 
 ![Bob Esponja despiédiendose](/assets/cya.gif)
+
+### Referencias
+
+- [React Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
+- [CSS Animation MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
