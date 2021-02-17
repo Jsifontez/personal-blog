@@ -24,6 +24,13 @@ const Projects = (props) => {
         </p>
         <ul className="project__lists">
           <ProjectCard
+            href="https://jsifontez-country-quiz.netlify.app/"
+            src="../../country-quiz.png"
+            alt="Country Quiz Page"
+            title="Country Quiz"
+            description="A mini-game created with REST countries API"
+          />
+          <ProjectCard
             href="https://100daysofvue-show-local-weather.netlify.app/"
             src="../../show-weather.png"
             alt="Show Local Weather App"
@@ -36,13 +43,6 @@ const Projects = (props) => {
             alt="Tic Tac Toe Game Page"
             title="Tic Tac Toe Game"
             description="A simple game"
-          />
-          <ProjectCard
-            href="https://jsifontez.github.io/fcc-landing-page/"
-            src="../../advanced-react-graphql-course.png"
-            alt="Advanced React GraphQL Course Page"
-            title="Advanced React-GraphQL Course"
-            description="A landing page for Wes Bos"
           />
           <ProjectCard
             href="https://jsifontez.github.io/form-page/"
