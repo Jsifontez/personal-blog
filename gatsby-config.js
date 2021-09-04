@@ -4,7 +4,7 @@ module.exports = {
     title: `Juan Sifontez Blog`,
     author: `Juan Sifontez`,
     description: `Tech and personal blog to share my knowledge`,
-    siteUrl: `https://juansifontez.netlify.app/`,
+    siteUrl: `https://juansifontez.com/`,
     social: {
       twitter: `jsifontez_`,
     },
@@ -58,13 +58,6 @@ module.exports = {
             resolve: `gatsby-remark-smartypants`,
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // edit below
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
     {
