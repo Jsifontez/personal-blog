@@ -16,7 +16,7 @@ const ProjectCard = (props) => {
           alt={ props.alt }
         />
         <div className="project__description">
-          <h3 class="project__title">{ props.title }</h3>
+          <h3 className="project__title">{ props.title }</h3>
           <p className="project__text">{ props.description }</p>
         </div>
       </a>
