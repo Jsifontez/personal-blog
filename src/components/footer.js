@@ -39,7 +39,7 @@ const Footer = (props) => {
         </li>
       </ul>
       <p className="footer__note">
-        <small style={{ fontSize: `85%`}}>© Juan Sifontez 2020</small>
+        <small style={{ fontSize: `85%`}}>© Juan Sifontez 2020-2021</small>
       </p>
       <p className="footer__note note--is-last">
         <small>
