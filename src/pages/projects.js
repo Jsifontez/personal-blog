@@ -7,6 +7,49 @@ import "./projects.css";
 import ContentWrapper from "../components/wrapper"
 
 const Projects = (props) => {
+  const projects = [
+    {
+      id: 'project-00',
+      href:"https://jsifontez-random-quote-machine.netlify.app/",
+      src:"../../random-quote-machine-01.png",
+      alt:"Random quote machine preview Page",
+      title:"Random Quote Machine",
+      description:"Shows quotes from celebrities"
+    },
+    {
+      id: 'project-01',
+      href:"https://jsifontez-country-quiz.netlify.app/",
+      src:"../../country-quiz.png",
+      alt:"Country Quiz Page",
+      title:"Country Quiz",
+      description:"A mini-game created with REST countries API"
+    },
+    {
+      id: 'project-02',
+      href:"https://100daysofvue-show-local-weather.netlify.app/",
+      src:"../../show-weather.png",
+      alt:"Show Local Weather App",
+      title:"Show Weather App",
+      description:"An app that show the weather"
+    },
+    {
+      id: 'project-03',
+      href:"https://100daysofvue-tic-tac-toe.netlify.app/",
+      src:"../../tic-tac-toe.png",
+      alt:"Tic Tac Toe Game Page",
+      title:"Tic Tac Toe Game",
+      description:"A simple game"
+    },
+    {
+      id: 'project-04',
+      href:"https://jsifontez.github.io/form-page/",
+      src:"../../survey-form.png",
+      alt:"Survey Form Page",
+      title:"Survey Form",
+      description:"A Responsive Survey Form"
+    },
+  ]
+
   return(
     <Layout>
       <SEO title="Projects" />
@@ -23,41 +66,16 @@ const Projects = (props) => {
           >GitHub</a>
         </p>
         <ul className="project__lists">
-          <ProjectCard
-            href="https://jsifontez-random-quote-machine.netlify.app/"
-            src="../../random-quote-machine-01.png"
-            alt="Random quote machine preview Page"
-            title="Random Quote Machine"
-            description="An app that shows random quotes from celebrities"
-          />
-          <ProjectCard
-            href="https://jsifontez-country-quiz.netlify.app/"
-            src="../../country-quiz.png"
-            alt="Country Quiz Page"
-            title="Country Quiz"
-            description="A mini-game created with REST countries API"
-          />
-          <ProjectCard
-            href="https://100daysofvue-show-local-weather.netlify.app/"
-            src="../../show-weather.png"
-            alt="Show Local Weather App"
-            title="Show Weather App"
-            description="An app that show the weather"
-          />
-          <ProjectCard
-            href="https://100daysofvue-tic-tac-toe.netlify.app/"
-            src="../../tic-tac-toe.png"
-            alt="Tic Tac Toe Game Page"
-            title="Tic Tac Toe Game"
-            description="A simple game"
-          />
-          <ProjectCard
-            href="https://jsifontez.github.io/form-page/"
-            src="../../survey-form.png"
-            alt="Survey Form Page"
-            title="Survey Form"
-            description="A Responsive Survey Form"
-          />
+          {projects.map(p => (
+            <ProjectCard
+              key={p.id}
+              href={p.href}
+              src={p.src}
+              alt={p.alt}
+              title={p.title}
+              description={p.description}
+            />
+          ))}
         </ul>
       </ContentWrapper>
     </Layout>
