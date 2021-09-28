@@ -10,6 +10,14 @@ const Projects = (props) => {
   const projects = [
     {
       id: 'project-00',
+      href:"https://markdown-previewer-dun.vercel.app/",
+      src:"../../markdown-previewer.png",
+      alt:"Markdown previewer page",
+      title:"Markdown Previewer",
+      description:"A website to visualize text with markdown format"
+    },
+    {
+      id: 'project-01',
       href:"https://jsifontez-random-quote-machine.netlify.app/",
       src:"../../random-quote-machine-01.png",
       alt:"Random quote machine preview Page",
@@ -17,7 +25,7 @@ const Projects = (props) => {
       description:"Shows quotes from celebrities"
     },
     {
-      id: 'project-01',
+      id: 'project-02',
       href:"https://jsifontez-country-quiz.netlify.app/",
       src:"../../country-quiz.png",
       alt:"Country Quiz Page",
@@ -25,7 +33,7 @@ const Projects = (props) => {
       description:"A mini-game created with REST countries API"
     },
     {
-      id: 'project-02',
+      id: 'project-03',
       href:"https://100daysofvue-show-local-weather.netlify.app/",
       src:"../../show-weather.png",
       alt:"Show Local Weather App",
@@ -33,21 +41,13 @@ const Projects = (props) => {
       description:"An app that show the weather"
     },
     {
-      id: 'project-03',
+      id: 'project-04',
       href:"https://100daysofvue-tic-tac-toe.netlify.app/",
       src:"../../tic-tac-toe.png",
       alt:"Tic Tac Toe Game Page",
       title:"Tic Tac Toe Game",
       description:"A simple game"
-    },
-    {
-      id: 'project-04',
-      href:"https://jsifontez.github.io/form-page/",
-      src:"../../survey-form.png",
-      alt:"Survey Form Page",
-      title:"Survey Form",
-      description:"A Responsive Survey Form"
-    },
+    }
   ]
 
   return(
