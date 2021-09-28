@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "./Image"
 import "./project-card.css";
 
 const ProjectCard = (props) => {
@@ -10,10 +11,10 @@ const ProjectCard = (props) => {
         rel="noopener noreferrer"
         href={props.href}
       >
-        <img
+        <Image
           className="project__image"
-          src={ props.src }
-          alt={ props.alt }
+          filename={props.src}
+          alt={props.alt}
         />
         <div className="project__description">
           <h3 className="project__title">{ props.title }</h3>
