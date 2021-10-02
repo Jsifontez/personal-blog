@@ -57,7 +57,7 @@ const Projects = (props) => {
         <h1 className="projects__title">Projects</h1>
         <p className="projects__intro">
           Check my featured pesonal projects in this section. <br />
-          If you want to see more check my {" "}
+          If you want to see more, check my {" "}
           <a
             className="link is--bigger"
             href="https://github.com/jsifontez"
