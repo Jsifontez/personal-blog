@@ -15,18 +15,13 @@ const Contact = (props) => {
         <section className="contact__description">
           <p>Thanks for your interest in getting in touch!</p>
           <p>
-            I am happy to put connect with you. Either for any
-            questionyou have or if you want to have talk about
-            anything else. <span role="img" aria-label="hug emoji">🤗</span>
+            I am happy to put connect with you. Either for any question you have or if you want to have talk about anything else. <span role="img" aria-label="hug emoji">🤗</span>
           </p>
           <p>
-            The quickest way to contact me is through
-            Twitter <a className="link" href="https://twitter.com/jsifontez_">@Jsifontez_</a> if
-            you want to chat.
+            The quickest way to contact me is through twitter <a className="link" href="https://twitter.com/jsifontez_">@Jsifontez_</a> if you want to chat.
           </p>
           <p>
-            However, if you have a more serious proposal you
-            can send me an email to <a className="link" href="mailto:juansfontz@gmail.com">juansfontz@gmail.com</a>.
+            However, if you have a more serious proposal you can send me an email to <a className="link" href="mailto:juan.sifontez.dev@gmail.com">juan.sifontez.dev@gmail.com</a>.
           </p>
         </section>
       </article>
