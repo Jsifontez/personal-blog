@@ -4,21 +4,6 @@ const typography = new Typography({
   baseFontSize: "18px",
   baseLineHeight: '25.2px',
   scaleRatio: 2.5,
-  googleFonts: [
-    {
-      name: "Fira Sans",
-      styles: ["Bold"]
-    },
-    {
-      name: "Montserrat",
-      styles: [
-        '400',
-        '400i',
-        '700',
-        '700i',
-      ],
-    }
-  ],
   headerFontFamily: ["Fira Sans", "sans-serif"],
   bodyFontFamily: ["Montserrat", "sans-serif"],
 })
