@@ -11,12 +11,12 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-webpack-bundle-analyser-v2",
     `gatsby-plugin-feed-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
