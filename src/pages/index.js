@@ -7,10 +7,8 @@ import HomeLayout from "../components/home-layout"
 
 class IndexPage extends Component {
   render() {
-    const siteTitle = "Juan Sifontez"
-
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout>
         <SEO
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
