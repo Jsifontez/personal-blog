@@ -4,6 +4,13 @@ import { Link } from "gatsby"
 import "./header.css"
 
 const Header = () => {
+  const links = [
+    {to: '/', name: 'About'},
+    {to: '/projects/', name: 'Projects'},
+    {to: '/blog/', name: 'Blog'},
+    {to: '/contact/', name: 'Contact'}
+  ]
+
   return(
     <header className="header">
       <h1 className="header__logo">
@@ -11,42 +18,17 @@ const Header = () => {
       </h1>
       <nav className="header__nav">
         <ul className="header__links">
-          <li className="header__link">
-            <Link
-              activeClassName="active"
-              className="link link--header"
-              to="/"
-            >
-              About
-            </Link>
-          </li>
-          <li className="header__link">
-            <Link
-              activeClassName="active"
-              className="link link--header"
-              to="/projects/"
-            >
-              Projects
-            </Link>
-          </li>
-          <li className="header__link">
-            <Link
-              activeClassName="active"
-              className="link link--header"
-              to="/blog/"
-            >
-              Blog
-            </Link>
-          </li>
-          <li className="header__link">
-            <Link
-              activeClassName="active"
-              className="link link--header is--last"
-              to="/contact/"
-            >
-              Contact
-            </Link>
-          </li>
+          {links.map(link => (
+            <li className="header__link" key={link}>
+              <Link
+                activeClassName="active"
+                className="link link--header"
+                to={link.to}
+              >
+                {link.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
