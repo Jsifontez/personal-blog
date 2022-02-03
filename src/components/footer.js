@@ -3,45 +3,33 @@ import React from "react";
 import "./footer.css"
 
 const Footer = (props) => {
+  const socialLinks = [
+    {href: "https://twitter.com/jsifontez_", to: 'Twitter'},
+    {href: "https://www.linkedin.com/in/juan-sifontez/", to: 'LinkedIn'},
+    {href: "https://github.com/Jsifontez", to: 'GitHub'},
+  ]
+
   return(
     <footer className="footer">
       <h4 className="social__title">Find me in:</h4>
       <ul className="footer__links">
-        <li className="social__link">
-          <a
-            className="link"
-            href="https://twitter.com/jsifontez_"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Twitter
-          </a>
-        </li>
-        <li className="social__link">
-          <a
-            className="link"
-            href="https://www.linkedin.com/in/juan-sifontez/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-        </li>
-        <li className="social__link">
-          <a
-            className="link"
-            href="https://github.com/Jsifontez"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </li>
+        {socialLinks.map(link => (
+          <li className="social__link" key={link.to}>
+            <a
+              className="link"
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {link.to}
+            </a>
+          </li>
+        ))}
       </ul>
       <p className="footer__note">
         <small style={{ fontSize: `85%`}}>© Juan Sifontez 2020-2021</small>
       </p>
-      <p className="footer__note note--is-last">
+      <p className="footer__note">
         <small>
           This site is built with {` `}
           <a className="link is--note" href="https://www.gatsbyjs.org">Gatsby</a> {` `}

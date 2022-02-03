@@ -33,11 +33,6 @@
   margin-bottom: .3rem;
 }
 
-.footer__note.note--is-last {
-  font-weight: 300;
-  margin-bottom: 1.1rem;
-}
-
 .link.is--note {
   font-weight: 300;
   font-size: .8rem;
