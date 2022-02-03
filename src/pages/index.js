@@ -14,12 +14,9 @@ class IndexPage extends Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <HomeLayout>
-          <div style={{ textAlign: `center`, padding: `12px` }}>
-            {/*<img style={{ margin: 0 }} src="./yo-en-la-playa-editada-blurbg.png" alt="Yo en la playa" /> */}
-            <h1>
-              Welcome
-            </h1>
-          </div>
+          <h1 style={{ textAlign: `center`, padding: `12px`, margin: 0 }}>
+            Welcome
+          </h1>
           <div style={{ textAlign: `center`, padding: `12px` }}>
             <p>Hi {" "}
               <span role="img" aria-label="wave emoji">

@@ -1,13 +1,10 @@
 import React from "react"
-import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 class NotFoundPage extends React.Component {
   render() {
-    const { data } = this.props
-
     return (
       <Layout>
         <SEO title="404: Not Found" />
@@ -19,13 +16,3 @@ class NotFoundPage extends React.Component {
 }
 
 export default NotFoundPage
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

@@ -1,13 +1,13 @@
 import React from "react";
 
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+// import SEO from "../components/seo";
 import "./contact.css";
 
 const Contact = (props) => {
   return(
     <Layout>
-      <SEO title="Contact" />
+      {/*<SEO title="Contact" />*/}
       <article className="contact">
         <header>
           <h1 className="contact__title">Contact</h1>
