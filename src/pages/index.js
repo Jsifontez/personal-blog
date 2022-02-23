@@ -24,10 +24,10 @@ class IndexPage extends Component {
               </span> my name is Juan, I'm a
               self-taught FrontEnd developer.</p>
             <p>
-              My knowledge go from HTML, CSS and Javascript focusing on responsive design. Mainly I use ReactJs and Vue.js ecosystems. However, I'm learning NodeJs and GraphQL.
+              My knowledge goes from HTML to CSS and Javascript, focusing on responsive design. I mainly use the ReactJS and VueJS ecosystems.
             </p>
             <p>
-              I'm also interested in <Link className="link" to="/blog/">Blogging</Link> from my personal experiences in life and tech things. And write stories just for fun.
+              I'm also interested in <Link className="link" to="/blog/">Blogging</Link> about my personal experiences and tech stuff. And writing stories just for fun.
             </p>
             <p>
               Currently I'm developing personal projects and I'm available to hire. Feel
