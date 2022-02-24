@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import "./blog-card.css";
 
 const BlogCard = (props) => {
+  console.log('slug:', props.slug, 'props:', props)
   return(
     <article
       key={props.slug}
@@ -12,7 +13,7 @@ const BlogCard = (props) => {
       <h2 className="blog-card__title">
         <Link
           className = "link link__title"
-          to={`blog${props.slug}`}
+          to={`/blog${props.slug}`}
         >
           {props.title}
         </Link>
@@ -26,7 +27,7 @@ const BlogCard = (props) => {
       />
       <Link
         className = "link link--read"
-        to={`blog${props.slug}`}
+        to={`/blog${props.slug}`}
       >
         Read more
       </Link>
