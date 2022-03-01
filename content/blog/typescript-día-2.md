@@ -2,7 +2,7 @@
 path: typescript-2
 date: 2022-03-01T02:10:10.768Z
 title: TypeScript día 2
-description: Continúa con mi segundo día aprendiendo TypeScript
+description: Continúo con mi segundo día aprendiendo TypeScript
 ---
 Hoy es m día dos realizando el tutorial de [Netninja](https://www.youtube.com/c/TheNetNinja) sobre [TypeScript](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI). El día de hoy aprendí sobre:
 
