@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./home-layout.css"
+import styles from "./home-layout.module.css"
 
 const HomeLayout = (props) => {
   return (
-    <div className="home">
+    <div className={styles.home}>
       {props.children}
     </div>
   )

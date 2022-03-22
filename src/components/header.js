@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link"
 
-import "./header.css"
+import styles from "./header.module.css"
 
 const Header = () => {
   const links = [
@@ -12,14 +12,14 @@ const Header = () => {
   ]
 
   return(
-    <header className="header">
-      <h1 className="header__logo">
+    <header className={styles.header}>
+      <h1 className={styles.header__logo}>
         Juan Sifontez
       </h1>
-      <nav className="header__nav">
-        <ul className="header__links">
+      <nav className={styles.header__nav}>
+        <ul className={styles.header__links}>
           {links.map(link => (
-            <li className="header__link" key={link}>
+            <li className={styles.header__link} key={link}>
               <Link
                 activeClassName="active"
                 className="link link--header"
