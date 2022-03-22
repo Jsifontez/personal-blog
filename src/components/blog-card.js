@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import Link from "next/link";
 
 import "./blog-card.css";
 
@@ -13,9 +13,11 @@ const BlogCard = (props) => {
       <h2 className="blog-card__title">
         <Link
           className = "link link__title"
-          to={`/blog${props.slug}`}
+          href={`/blog${props.slug}`}
         >
-          {props.title}
+          <a>
+            {props.title}
+          </a>
         </Link>
       </h2>
       <small className="blog-card__date">{props.date}</small>
@@ -27,9 +29,11 @@ const BlogCard = (props) => {
       />
       <Link
         className = "link link--read"
-        to={`/blog${props.slug}`}
+        href={`/blog${props.slug}`}
       >
-        Read more
+        <a>
+          Read more
+        </a>
       </Link>
     </article>
   )

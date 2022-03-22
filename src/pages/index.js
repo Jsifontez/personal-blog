@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
+import Link from "next/link"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -27,11 +27,11 @@ class IndexPage extends Component {
               My knowledge goes from HTML to CSS and Javascript, focusing on responsive design. I mainly use the ReactJS and VueJS ecosystems.
             </p>
             <p>
-              I'm also interested in <Link className="link" to="/blog/">Blogging</Link> about my personal experiences and tech stuff. And writing stories just for fun.
+              I'm also interested in <Link className="link" href="/blog/"><a>Blogging</a></Link> about my personal experiences and tech stuff. And writing stories just for fun.
             </p>
             <p>
               Currently I'm developing personal projects and I'm available to hire. Feel
-              free to <Link className="link" to="/contact/">contact</Link> with me.
+              free to <Link className="link" href="/contact/"><a>contact</a></Link> with me.
             </p>
           </div>
         </HomeLayout>

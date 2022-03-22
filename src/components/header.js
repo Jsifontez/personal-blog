@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from "next/link"
 
 import "./header.css"
 
@@ -23,9 +23,11 @@ const Header = () => {
               <Link
                 activeClassName="active"
                 className="link link--header"
-                to={link.to}
+                href={link.to}
               >
-                {link.name}
+                <a>
+                  {link.name}
+                </a>
               </Link>
             </li>
           ))}
