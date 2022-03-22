@@ -1,12 +1,43 @@
-import React from "react"
+import { remark } from "remark"
+import html from "remark-html"
 import { Link, graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 
+import { getPostBySlug, getAllPosts } from "../lib/blog"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import "./blog-post.css";
 import ContentWrapper from "../components/wrapper"
+
+export async function getStaticPaths () {
+  const posts = getAllPosts()
+
+  return {
+    paths: posts.map( (post) => {
+      return {
+        params: {
+          slug:
+        }
+      }
+    })
+  }
+}
+
+export async function getStaticProps ({ params }) {
+  const post = getPostBySlug(params.slug)
+  const markdown = await remark()
+    .use(html)
+    .process(post.content || '')
+
+  const content = markdown.toString()
+
+  return {
+    props: {
+      ...post,
+      content
+    }
+  }
+}
 
 const BlogPostTemplate = (props) => {
   const post = props.data.mdx
