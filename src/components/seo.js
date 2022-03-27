@@ -3,7 +3,6 @@ import config from "../config"
 
 const Seo = ({ description, title }) => {
   const siteTile = config.title
-  const description = descripton || '';
 
   return (
     <Head>
