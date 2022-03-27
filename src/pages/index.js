@@ -2,16 +2,16 @@ import React, { Component } from "react"
 import Link from "next/link"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import HomeLayout from "../components/home-layout"
 
 class IndexPage extends Component {
   render() {
     return (
       <Layout>
-        <SEO
+        <seo
           title="Home"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          description="Tech and personal blog to share my knowledge."
         />
         <HomeLayout>
           <h1 style={{ textAlign: `center`, padding: `12px`, margin: 0 }}>
