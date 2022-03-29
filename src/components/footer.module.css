@@ -32,12 +32,3 @@
 .footer__note {
   margin-bottom: .3rem;
 }
-
-.link.is--note {
-  font-weight: 300;
-  font-size: .8rem;
-}
-
-.link.is--note::after {
-  height: 10%;
-}
