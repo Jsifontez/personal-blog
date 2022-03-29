@@ -22,10 +22,9 @@ const Header = () => {
             <li className={styles.header__link} key={link}>
               <Link
                 activeClassName="active"
-                className="link link--header"
                 href={link.to}
               >
-                <a>
+                <a className="link link--header">
                   {link.name}
                 </a>
               </Link>

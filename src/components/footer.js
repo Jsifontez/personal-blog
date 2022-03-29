@@ -16,7 +16,7 @@ const Footer = (props) => {
         {socialLinks.map(link => (
           <li className={styles.social__link} key={link.to}>
             <a
-              className={styles.link}
+              className="link"
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
