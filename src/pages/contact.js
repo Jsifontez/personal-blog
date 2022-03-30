@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import styles from "../styles/contact.module.css"
 
 const Contact = (props) => {
   return(
@@ -8,11 +9,11 @@ const Contact = (props) => {
         title="Contact"
         description="The best way to contact me. Twitter: @jsifontez_ and telegram: @jsifontez"
       />
-      <article className="contact">
+      <article className={styles.contact}>
         <header>
-          <h1 className="contact__title">Contact</h1>
+          <h1 className={styles.contact__title}>Contact</h1>
         </header>
-        <section className="contact__description">
+        <section className={styles.contact__description}>
           <p>Thanks for your interest in getting in touch!</p>
           <p>
             I am happy to put connect with you. Either for any question you have or if you want to have talk about anything else. <span role="img" aria-label="hug emoji">🤗</span>

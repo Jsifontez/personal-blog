@@ -41,31 +41,3 @@
 .link.is--note::after {
   height: 10%;
 }
-
-/* styles for contact page */
-.contact {
-  box-sizing: border-box;
-  padding: 1rem calc(50% - 350px);
-  min-height: calc(100vh - 170px - 75px - 2.5rem);
-}
-
-.contact__description {
-  text-align: justify;
-  margin-top: calc(1rem + 1.5vh);
-}
-
-.contact__description > p {
-  margin: 1rem 0;
-}
-
-@media (max-width: 750px){
-  .contact {
-    width: 90vw;
-    margin: 0 auto;
-    padding: 1rem 0;
-  }
-
-  .contact__title {
-    text-align: center;
-  }
-}
