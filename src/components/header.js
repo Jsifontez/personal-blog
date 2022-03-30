@@ -19,7 +19,7 @@ const Header = () => {
       <nav className={styles.header__nav}>
         <ul className={styles.header__links}>
           {links.map(link => (
-            <li className={styles.header__link} key={link}>
+            <li className={styles.header__link} key={link.name}>
               <Link
                 activeClassName="active"
                 href={link.to}
