@@ -13,13 +13,11 @@ const ProjectCard = (props) => {
       >
         <Image
           className={styles.project__image}
-          src={`/${props.src}`}
+          src={`/assets/${props.src}`}
           alt={props.alt}
           layout='fill'
           placeholder='blur'
-          // here is need the blurData="data:..."
-          // bellow is an example with a pink image of 1x1 pixel
-          // blurData="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN841j1HwAGcAKo69cnCAAAAABJRU5ErkJggg=="
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN841j1HwAGcAKo69cnCAAAAABJRU5ErkJggg=="
         />
         <div className={styles.project__description}>
           <h3 className={styles.project__title}>{ props.title }</h3>
