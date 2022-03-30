@@ -1,13 +1,13 @@
-import React from "react";
-
 import Layout from "../components/layout";
-// import SEO from "../components/seo";
-import "./contact.css";
+import Seo from "../components/seo";
 
 const Contact = (props) => {
   return(
     <Layout>
-      {/*<SEO title="Contact" />*/}
+      <Seo
+        title="Contact"
+        description="The best way to contact me. Twitter: @jsifontez_ and telegram: @jsifontez"
+      />
       <article className="contact">
         <header>
           <h1 className="contact__title">Contact</h1>
