@@ -10,11 +10,8 @@ const BlogCard = (props) => {
       className={styles.blogcard}
     >
       <h2 className={styles.blogcard__title}>
-        <Link
-          className = "link link__title"
-          href={`/blog${props.slug}`}
-        >
-          <a>
+        <Link href={`/blog${props.slug}`}>
+          <a className = "link link__title">
             {props.title}
           </a>
         </Link>
@@ -26,11 +23,8 @@ const BlogCard = (props) => {
           __html: props.description
         }}
       />
-      <Link
-        className = "link link--read"
-        href={`/blog${props.slug}`}
-      >
-        <a>
+      <Link href={`/blog${props.slug}`}>
+        <a className = "link link--read">
           Read more
         </a>
       </Link>
