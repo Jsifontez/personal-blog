@@ -36,9 +36,10 @@ const Blog = ({ posts }) => {
         </header>
         <div className={styles.blog__posts}>
           {posts.map(post => {
+            const title = post.frontmatter.title
             return (
               <BlogCard
-                title = { post.title }
+                title = { title }
                 description = { post.frontmatter.description }
                 slug = { post.slug }
                 date = { post.frontmatter.date }
