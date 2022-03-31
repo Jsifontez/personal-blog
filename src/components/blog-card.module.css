@@ -1,19 +1,15 @@
-.blog-card__title{
+.blogcard__title{
   margin-top: 2em;
   margin-bottom: .5em
 }
 
-.link.link__title {
-  font-size: 2rem;
-}
-
-.blog-card__date {
+.blogcard__date {
   font-weight: 600;
   margin-bottom: .7rem;
   display: inline-block;
 }
 
-.blog-card__summary {
+.blogcard__summary {
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }

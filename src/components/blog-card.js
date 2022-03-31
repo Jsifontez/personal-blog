@@ -4,13 +4,12 @@ import Link from "next/link";
 import styles from "./blog-card.module.css";
 
 const BlogCard = (props) => {
-  console.log('slug:', props.slug, 'props:', props)
   return(
     <article
       key={props.slug}
-      className={styles.blog-card}
+      className={styles.blogcard}
     >
-      <h2 className={styles.blog-card__title}>
+      <h2 className={styles.blogcard__title}>
         <Link
           className = "link link__title"
           href={`/blog${props.slug}`}
@@ -20,9 +19,9 @@ const BlogCard = (props) => {
           </a>
         </Link>
       </h2>
-      <small className={styles.blog-card__date}>{props.date}</small>
+      <small className={styles.blogcard__date}>{props.date}</small>
       <p
-        className={styles.blog-card__summary}
+        className={styles.blogcard__summary}
         dangerouslySetInnerHTML={{
           __html: props.description
         }}
