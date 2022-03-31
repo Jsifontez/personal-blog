@@ -11,7 +11,7 @@ export function getPostBySlug(slug) {
   const fullPath = join(postsDiectory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
-  const date = format(parseISO(data.date), 'MMMM dd, yyyy') // here should be `dd MMMM, yyyy`
+  const date = format(data.date, 'MM dd, yyyy') // here should be `dd MMMM, yyyy`
 
   return {
     slug: realSlug,
@@ -23,5 +23,14 @@ export function getPostBySlug(slug) {
 // return an array of objects
 export function getAllPosts() {
   const slugs = fs.readdirSync(postsDiectory)
-  const posts = slugs.map(slug => getPostBySlug(slug))
+  const posts = slugs.map(slug => {
+    let post = getPostBySlug(slug)
+
+    return {
+      slug: post.slug,
+      frontmatter: post.frontmatter
+    }
+  })
+
+  return posts
 }
