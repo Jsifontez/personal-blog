@@ -2,12 +2,12 @@ import { remark } from "remark"
 import html from "remark-html"
 import Link from "next/link"
 
-import { getPostBySlug, getAllPosts } from "../utils/blog"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
-import "./blog-post.css";
-import ContentWrapper from "../components/wrapper"
+import { getPostBySlug, getAllPosts } from "../../utils/blog"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import { rhythm, scale } from "../../utils/typography"
+import styles from "../../styles/blog-post.module.css";
+import ContentWrapper from "../../components/wrapper"
 
 export async function getStaticPaths () {
   const posts = getAllPosts()
@@ -41,34 +41,35 @@ export async function getStaticProps ({ params }) {
 }
 
 const BlogPostTemplate = (props) => {
-  const post = props.data.mdx
-  const siteTitle = props.data.site.siteMetadata.title
-  const { previous, next } = props.pageContext
+  const post = props
+  // const { previous, next } = props.pageContext
 
   return (
-    <Layout location={props.location} title={siteTitle}>
+    <Layout>
       <SEO
         title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        description={post.frontmatter.description}
       />
       <ContentWrapper element="article">
-        <header className="post__header">
-          <h1 className="post__title">{post.frontmatter.title}</h1>
-          <p className="post__date">
+        <header className={styles.post__header}>
+          <h1 className={styles.post__title}>{post.frontmatter.title}</h1>
+          <p className={styles.post__date}>
             {post.frontmatter.date}
           </p>
         </header>
-        <section className="post__body">
-          <MDXRenderer>{post.body}</MDXRenderer>
+        <section className={styles.post__body}
+          dangerouslySetInnerHTML={{__html: post.content}}
+        >
+          {/*<MDXRenderer>{post.body}</MDXRenderer>*/}
         </section>
-        <footer className="post__footer">
+        <footer className={styles.post__footer}>
           <hr
             style={{
               marginBottom: rhythm(1),
             }}
           />
 
-          <ul className="post__pagination">
+          {/*<ul className={styles.post__pagination}>
             <li>
               {previous && (
                 <Link className="link pagination__link" href={`blog${previous.fields.slug}`} rel="prev">
@@ -87,7 +88,7 @@ const BlogPostTemplate = (props) => {
                 </Link>
               )}
             </li>
-          </ul>
+          </ul>*/}
         </footer>
       </ContentWrapper>
     </Layout>
