@@ -8,8 +8,6 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "@fontsource/fira-sans": "^4.5.0",
-    "@fontsource/montserrat": "^4.5.1",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
     "babel-plugin-styled-components": "^1.10.0",
