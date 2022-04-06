@@ -1,8 +1,9 @@
 backend:
   name: github
   repo: jsifontez/personal-blog
+  banch: master
 
-media_folder: static/assets
+media_folder: public/assets
 public_folder: assets
 
 collections:
