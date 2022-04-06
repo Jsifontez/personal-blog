@@ -32,5 +32,8 @@ export function getAllPosts() {
     }
   })
 
+  // to show sorted posts from newest to older
+  posts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
+
   return posts
 }
