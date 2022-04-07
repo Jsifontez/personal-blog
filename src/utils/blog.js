@@ -11,7 +11,7 @@ export function getPostBySlug(slug) {
   const fullPath = join(postsDiectory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
-  const date = format(data.date, 'MM dd, yyyy') // here should be `dd MMMM, yyyy`
+  const date = format(data.date, 'MMMM dd, yyyy') // here should be `dd MMMM, yyyy`
 
   return {
     slug: realSlug,
