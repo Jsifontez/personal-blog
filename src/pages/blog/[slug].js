@@ -2,10 +2,9 @@ import { remark } from "remark"
 import html from "remark-html"
 import Link from "next/link"
 
-import { getPostBySlug, getAllPosts } from "../../utils/blog"
+import { getPostBySlug, getAllPosts, getPostContext } from "../../utils/blog"
 import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import { rhythm, scale } from "../../utils/typography"
+import Seo from "../../components/seo"
 import styles from "../../styles/blog-post.module.css";
 import ContentWrapper from "../../components/wrapper"
 
@@ -32,21 +31,24 @@ export async function getStaticProps ({ params }) {
 
   const content = markdown.toString()
 
+  const postContext = getPostContext(params.slug)
+
   return {
     props: {
       ...post,
-      content
+      content,
+      ...postContext
     }
   }
 }
 
 const BlogPostTemplate = (props) => {
   const post = props
-  // const { previous, next } = props.pageContext
+  const {previous, next} = props.postContext
 
   return (
     <Layout>
-      <SEO
+      <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description}
       />
@@ -65,30 +67,32 @@ const BlogPostTemplate = (props) => {
         <footer className={styles.post__footer}>
           <hr
             style={{
-              marginBottom: rhythm(1),
+              marginTop: 0,
+              marginBottom: '1.4rem',
             }}
           />
 
-          {/*<ul className={styles.post__pagination}>
+          <ul className={styles.post__pagination}>
             <li>
-              {previous && (
-                <Link className="link pagination__link" href={`blog${previous.fields.slug}`} rel="prev">
-                  <a>
-                    ← {previous.frontmatter.title}
+              {props.postContext.previous && (
+                <Link href={`/blog/${previous.slug}`} rel="prev">
+                  <a className="link pagination__link">
+                    ← {previous.title}
                   </a>
                 </Link>
               )}
             </li>
             <li>
-              {next && (
-                <Link className="link pagination__link" href={`blog${next.fields.slug}`} rel="next">
-                  <a>
-                    {next.frontmatter.title} →
+              {props.postContext.next && (
+                <Link href={`/blog/${next.slug}`} rel="next">
+                  <a className="link pagination__link">
+                    {next.title} →
                   </a>
                 </Link>
               )}
             </li>
-          </ul>*/}
+          </ul>
+
         </footer>
       </ContentWrapper>
     </Layout>
