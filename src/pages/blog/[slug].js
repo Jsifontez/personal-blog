@@ -1,6 +1,6 @@
-import { remark } from "remark"
-import html from "remark-html"
 import Link from "next/link"
+import { serialize } from "next-mdx-remote/serialize"
+import { MDXRemote } from "next-mdx-remote"
 
 import { getPostBySlug, getAllPosts, getPostContext } from "../../utils/blog"
 import Layout from "../../components/layout"
@@ -25,45 +25,41 @@ export async function getStaticPaths () {
 
 export async function getStaticProps ({ params }) {
   const post = getPostBySlug(params.slug)
-  const markdown = await remark()
-    .use(html)
-    .process(post.content || '')
-
-  const content = markdown.toString()
-
+  const source = await serialize(post.content)
   const postContext = getPostContext(params.slug)
 
   return {
     props: {
-      ...post,
-      content,
+      frontmatter: post.frontmatter,
+      source,
       ...postContext
     }
   }
 }
 
-const BlogPostTemplate = (props) => {
-  const post = props
-  const {previous, next} = props.postContext
+const BlogPostTemplate = ({frontmatter, source, postContext}) => {
+  const { previous, next } = postContext
 
   return (
     <Layout>
       <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description}
+        title={frontmatter.title}
+        description={frontmatter.description}
       />
       <ContentWrapper element="article">
         <header className={styles.post__header}>
-          <h1 className={styles.post__title}>{post.frontmatter.title}</h1>
+          <h1 className={styles.post__title}>
+            {frontmatter.title}
+          </h1>
           <p className={styles.post__date}>
-            {post.frontmatter.date}
+            {frontmatter.date}
           </p>
         </header>
-        <section className={styles.post__body}
-          dangerouslySetInnerHTML={{__html: post.content}}
-        >
-          {/*<MDXRenderer>{post.body}</MDXRenderer>*/}
+
+        <section className={styles.post__body}>
+          <MDXRemote {...source} />
         </section>
+
         <footer className={styles.post__footer}>
           <hr
             style={{
@@ -74,7 +70,7 @@ const BlogPostTemplate = (props) => {
 
           <ul className={styles.post__pagination}>
             <li>
-              {props.postContext.previous && (
+              {previous && (
                 <Link href={`/blog/${previous.slug}`} rel="prev">
                   <a className="link pagination__link">
                     ← {previous.title}
@@ -83,7 +79,7 @@ const BlogPostTemplate = (props) => {
               )}
             </li>
             <li>
-              {props.postContext.next && (
+              {next && (
                 <Link href={`/blog/${next.slug}`} rel="next">
                   <a className="link pagination__link">
                     {next.title} →
