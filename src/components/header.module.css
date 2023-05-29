@@ -38,11 +38,16 @@
     height: 5.556rem; /*100px*/
     flex-direction: column;
   }
+  .header__nav {
+    margin: 0;
+  }
+  .header__links {
+    padding: 0;
+  }
 }
 
 @media (max-width: 400px) {
   .header__nav {
-    margin: 0;
     width: 100%;
   }
 
