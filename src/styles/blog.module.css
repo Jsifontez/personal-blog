@@ -1,5 +1,5 @@
 .blog__header {
-  grid-column: 2/10;
+  grid-column: 3/11;
   grid-row: 1;
 }
 
@@ -8,6 +8,6 @@
 }
 
 .blog__posts {
-  grid-column: 2/10;
+  grid-column: 3/11;
   grid-row: 2;
 }

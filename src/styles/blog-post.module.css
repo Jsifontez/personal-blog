@@ -2,7 +2,7 @@
 
 .post__header {
   grid-row: 1;
-  grid-column: 2/10;
+  grid-column: 3/11;
 }
 
 .post__title {
@@ -18,7 +18,7 @@
 
 .post__body {
   grid-row: 2;
-  grid-column: 2/10;
+  grid-column: 3/11;
 }
 
 .post__body > h2,
@@ -136,7 +136,7 @@
 }
 
 .post__footer {
-  grid-column: 2/10;
+  grid-column: 3/11;
   grid-row: 3;
 }
 
