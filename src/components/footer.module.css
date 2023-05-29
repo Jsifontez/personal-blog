@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  height: 8.667rem;/*156px;*/
+  height: 9.444rem; /* 170px */
   align-items: center;
   box-sizing: border-box;
   flex-direction: column;
@@ -18,12 +18,16 @@
   padding: 0;
   margin-left: 0;
   margin-bottom: .4rem;
+  margin-bottom: 1.2rem;
 }
 
 .social__link {
   margin-right: 10px;
-  margin-bottom: .5rem;
   display: inline-block;
+}
+
+.social__link:last-child {
+  margin-right: 0;
 }
 
 .social__link > .link {
@@ -31,5 +35,6 @@
 }
 
 .footer__note {
+  margin-top: 0;
   margin-bottom: .3rem;
 }
