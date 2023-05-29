@@ -35,5 +35,9 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write src/**/*.{js,jsx}"
-  }
+  },
+  "browserslist": [
+    "defaults and supports es6-module",
+    "maintained node versions"
+  ]
 }
